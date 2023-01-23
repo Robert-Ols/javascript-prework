@@ -59,19 +59,19 @@ function playGame(playerInput) { clearMessages();
 }
 
 // listeners for buttons
-function buttonKamień() {
+const buttonKamień = function() {
   playGame("1");
 }
 const playRock = document.getElementById("play-rock");
 playRock.addEventListener("click", buttonKamień);
 
-function buttonPaier() {
+const buttonPaier = function() {
   playGame("2");
 }
 const playPaper = document.getElementById("play-paper");
 playPaper.addEventListener("click", buttonPaier);
 
-function buttonNożyce() {
+const buttonNożyce = function() {
   playGame("3");
 }
 const playScissors = document.getElementById("play-scissors");
